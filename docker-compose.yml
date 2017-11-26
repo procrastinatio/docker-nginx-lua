@@ -1,0 +1,10 @@
+version: '2'
+services:
+  nginx_lua:
+    build: .
+    image: procrastinatio/another-nginx-lua
+    environment:
+      NGINX_PORT: 9000
+    network_mode: "host"
+    ports:
+    - "9000:9000"
