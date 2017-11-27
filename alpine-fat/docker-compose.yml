@@ -2,7 +2,7 @@ version: '2'
 services:
   nginx_lua:
     build: .
-    image: procrastinatio/another-nginx-lua:1.13.7
+    image: procrastinatio/another-nginx-lua:alpine-fat
     environment:
       NGINX_PORT: 9000
     network_mode: "host"
